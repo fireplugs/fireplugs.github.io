@@ -1,0 +1,19 @@
+.h-logo {
+    height: 3.5em;
+}
+
+.bg-primary-500 {
+    background-color: #057ecc;
+}
+
+.from-primary-500 {
+    --tw-gradient-from: #120ab6 var(--tw-gradient-from-position);
+}
+
+.to-primary-300 {
+    --tw-gradient-to: #b4bffe var(--tw-gradient-to-position);
+}
+
+.to-primary-500 {
+    --tw-gradient-to: #55a2f7 var(--tw-gradient-to-position);
+}
