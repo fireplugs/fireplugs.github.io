@@ -6,14 +6,271 @@
     background-color: #057ecc;
 }
 
+.hover\:bg-primary-600:hover {
+    background-color: #0468a8;
+}
+
+.text-primary-500 {
+    color: #057ecc;
+}
+
 .from-primary-500 {
-    --tw-gradient-from: #120ab6 var(--tw-gradient-from-position);
+    --tw-gradient-from: #057ecc var(--tw-gradient-from-position);
 }
 
 .to-primary-300 {
-    --tw-gradient-to: #b4bffe var(--tw-gradient-to-position);
+    --tw-gradient-to: #7ec8f7 var(--tw-gradient-to-position);
 }
 
 .to-primary-500 {
-    --tw-gradient-to: #55a2f7 var(--tw-gradient-to-position);
+    --tw-gradient-to: #057ecc var(--tw-gradient-to-position);
+}
+
+/* Trust badges under hero */
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1e3a5f;
+    background: rgba(5, 126, 204, 0.1);
+    border: 1px solid rgba(5, 126, 204, 0.2);
+}
+
+/* Feature cards */
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    min-height: 9rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    background: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(5, 126, 204, 0.12);
+    border-color: rgba(5, 126, 204, 0.3);
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #057ecc, #3aa0e8);
+    color: #fff;
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.feature-desc {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.55);
+    margin: 0.25rem 0 0;
+    line-height: 1.4;
+}
+
+/* Step numbers */
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 9999px;
+    background: #057ecc;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* CTA buttons — explicit padding (don't rely on Tailwind utilities from CDN) */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.75rem 1.5rem;
+    min-height: 2.75rem;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #057ecc;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.cta-button:hover {
+    background-color: #0468a8;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(5, 126, 204, 0.35);
+}
+
+.cta-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(5, 126, 204, 0.35);
+}
+
+.cta-button--sm {
+    padding: 0.625rem 1.25rem;
+    min-height: 2.5rem;
+    font-size: 0.875rem;
+}
+
+.cta-button--lg {
+    padding: 1rem 2rem;
+    min-height: 3rem;
+    font-size: 1rem;
+}
+
+.cta-button--xl {
+    padding: 1.125rem 2.25rem;
+    min-height: 3.25rem;
+    font-size: 1.125rem;
+}
+
+.cta-button--block {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .cta-button--nav {
+        width: 100%;
+        padding: 0.875rem 1.25rem;
+        white-space: normal;
+    }
+
+    .cta-button--lg,
+    .cta-button--xl {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+}
+
+/* Final CTA section */
+.final-cta {
+    background: linear-gradient(135deg, rgba(5, 126, 204, 0.06) 0%, rgba(5, 126, 204, 0.02) 100%);
+    border-top: 1px solid rgba(5, 126, 204, 0.1);
+}
+
+.final-cta .cta-button {
+    margin-top: 2rem;
+}
+
+/* Product Hunt badge */
+.producthunt-badge {
+    width: 200px;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.producthunt-badge:hover {
+    opacity: 1;
+}
+
+/* Legal / content pages */
+.legal-content h2,
+.legal-content h3 {
+    scroll-margin-top: 2rem;
+}
+
+.legal-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.legal-content li {
+    margin-bottom: 0.35rem;
+}
+
+.legal-content a {
+    color: #057ecc;
+    text-decoration: underline;
+}
+
+/* Contact form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #057ecc;
+    box-shadow: 0 0 0 3px rgba(5, 126, 204, 0.15);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.contact-form button[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background: #057ecc;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #0468a8;
+    transform: translateY(-1px);
+}
+
+/* Mobile nav: stack CTA cleanly */
+@media (max-width: 768px) {
+    .feature-card {
+        min-height: 7.5rem;
+        padding: 1rem 0.75rem;
+    }
+
+    .feature-title {
+        font-size: 0.8rem;
+    }
+
+    .feature-desc {
+        display: none;
+    }
 }

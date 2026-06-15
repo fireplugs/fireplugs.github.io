@@ -28,7 +28,7 @@ if (!getCookie('lindo_accept_cookie')) {
       <div class="flex justify-between items-center gap-x-5 sm:gap-x-10">
         <h2 class="text-base text-gray-600 dark:text-gray-400">
           By continuing to use this site you consent to the use of cookies in accordance with our 
-          <a class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium" href="/cookies"> 
+          <a class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium" href="cookies.html"> 
             Cookies Policy.
           </a>
         </h2>
@@ -66,7 +66,7 @@ function getCookie(name) {
 }
 
 function protectEmail(emailElement, username) {
-  const name = 'projectiris77' || username;
+  const name = username || 'projectiris77';
   const domain = 'gmail.com';
   const protectedEmail = name + "@" + domain;
 
